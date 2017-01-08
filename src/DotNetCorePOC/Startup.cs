@@ -28,6 +28,7 @@ namespace DotNetCorePOC
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddSingleton(Configuration);
             services.AddTransient<IGreetingService, GreetingService>();
         }
@@ -48,6 +49,9 @@ namespace DotNetCorePOC
                     ExceptionHandler = context => context.Response.WriteAsync("oops!!")
                 });
             }
+
+            app.UseMvcWithDefaultRoute();
+
 
             //Below middleware will show a welcome page for every request
             //comes from diagnostic package
