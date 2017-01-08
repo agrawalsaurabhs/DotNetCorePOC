@@ -1,10 +1,12 @@
-﻿namespace DotNetCorePOC
+﻿using Microsoft.Extensions.Configuration;
+
+namespace DotNetCorePOC
 {
     public class GreetingService : IGreetingService
     {
-        public GreetingService()
+        public GreetingService(IConfiguration configuration)
         {
-            Message = "Hello World!! from greeting service";
+            Message = configuration["Greeting"];
         }
         public string Message { get; }
     }
