@@ -24,8 +24,6 @@ namespace DotNetCorePOC
             Configuration = builder.Build();
         }
 
-
-
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -43,7 +41,22 @@ namespace DotNetCorePOC
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler(new ExceptionHandlerOptions()
+                {
+                    ExceptionHandler = context => context.Response.WriteAsync("oops!!")
+                });
+            }
 
+            //Below middleware will show a welcome page for every request
+            //comes from diagnostic package
+            app.UseWelcomePage(new WelcomePageOptions()
+            {
+                Path = "/welcome"
+            });
+            app.UseFileServer();
+            app.UseStaticFiles();
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync(greetingService.Message);
