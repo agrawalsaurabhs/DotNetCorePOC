@@ -1,0 +1,21 @@
+﻿@model IEnumerable<DotNetCorePOC.Models.Restaurant>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        @foreach (var r in Model)
+        {
+            <div>
+                @r.Id
+            </div>
+            <div>
+                @r.Name
+            </div>
+        }
+    </div>
+</body>
+</html>

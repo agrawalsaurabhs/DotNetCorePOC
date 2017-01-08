@@ -6,14 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace DotNetCorePOC.Controller
+namespace DotNetCorePOC.Controllers
 {
-    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
+    [Route("[controller]/[action]")]
+    public class AboutController 
     {
-        // GET: /<controller>/
-        public string Index()
+        public string Phone()
         {
-            return "Hello";
+            return "1234567890";
+        }
+        public string Address()
+        {
+            return "USA";
         }
     }
 }

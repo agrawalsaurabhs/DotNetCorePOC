@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using DotNetCorePOC.Interfaces;
+using Microsoft.Extensions.Configuration;
 
-namespace DotNetCorePOC
+namespace DotNetCorePOC.Services
 {
     public class GreetingService : IGreetingService
     {
