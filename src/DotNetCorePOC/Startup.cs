@@ -13,6 +13,8 @@ using DotNetCorePOC.Interfaces;
 using DotNetCorePOC.Services;
 using DotNetCorePOC.Persistence;
 using Microsoft.EntityFrameworkCore;
+using DotNetCorePOC.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace DotNetCorePOC
 {
@@ -38,6 +40,8 @@ namespace DotNetCorePOC
             services.AddTransient<IGreetingService, GreetingService>();
             services.AddDbContext<DotNetCorePOCDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DotNetCorePOC")));
             services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<DotNetCorePOCDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +62,7 @@ namespace DotNetCorePOC
             }
 
             //app.UseMvcWithDefaultRoute();
-
+            app.UseIdentity();
             app.UseMvc(ConfigureRoutes);
 
 

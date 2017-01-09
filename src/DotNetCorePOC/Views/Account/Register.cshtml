@@ -1,0 +1,26 @@
+﻿@model DotNetCorePOC.ViewModels.RegisterUserViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div>User Registration</div>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.LabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Password)
+            @Html.EditorFor(m => m.Password)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.EditorFor(m => m.ConfirmPassword)
+        </div>
+
+        <input type="submit" value="save" />
+    }
+</body>
+</html>
