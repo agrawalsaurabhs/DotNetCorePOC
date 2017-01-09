@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using DotNetCorePOC.Interfaces;
 using DotNetCorePOC.Services;
+using DotNetCorePOC.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNetCorePOC
 {
@@ -34,6 +36,7 @@ namespace DotNetCorePOC
             services.AddMvc();
             services.AddSingleton(Configuration);
             services.AddTransient<IGreetingService, GreetingService>();
+            services.AddDbContext<DotNetCorePOCDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DotNetCorePOC")));
             services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
         }
 

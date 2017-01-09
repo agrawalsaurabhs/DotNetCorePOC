@@ -3,6 +3,7 @@
 using DotNetCorePOC.Interfaces;
 using DotNetCorePOC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNetCorePOC.Controllers
 {

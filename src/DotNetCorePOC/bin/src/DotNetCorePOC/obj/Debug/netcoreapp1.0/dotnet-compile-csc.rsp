@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\Debug\netcoreapp1.0\DotNetCorePOC.dll"
+"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\bin\Debug\netcoreapp1.0\DotNetCorePOC.dll"
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Cors.dll"
@@ -191,7 +191,7 @@
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Agrawal Saurabh\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\DotNetCorePOCdotnet-compile.deps.json",DotNetCorePOC.deps.json
+-resource:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\DotNetCorePOCdotnet-compile.deps.json",DotNetCorePOC.deps.json
 "C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Program.cs"
 "C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Startup.cs"
 "C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Controllers\AboutController.cs"

@@ -1,5 +1,5 @@
---temp-output:C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\
---out:C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\Debug\netcoreapp1.0\DotNetCorePOC.dll
+--temp-output:C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\bin\Debug\netcoreapp1.0\DotNetCorePOC.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -195,7 +195,7 @@
 --reference:C:\Users\Agrawal Saurabh\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Agrawal Saurabh\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Agrawal Saurabh\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\DotNetCorePOCdotnet-compile.deps.json",DotNetCorePOC.deps.json
+--resource:"C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\bin\src\DotNetCorePOC\obj\Debug\netcoreapp1.0\DotNetCorePOCdotnet-compile.deps.json",DotNetCorePOC.deps.json
 C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Program.cs
 C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Startup.cs
 C:\Users\Agrawal Saurabh\Desktop\github\DotNetCorePOC\src\DotNetCorePOC\Controllers\AboutController.cs
