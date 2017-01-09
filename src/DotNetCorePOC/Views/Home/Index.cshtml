@@ -18,6 +18,9 @@
             
             <a asp-action="Details" asp-route-id="@r.Id">Details</a>
         }
+
+       @await Component.InvokeAsync("Greeting")
+
     </div>
 </body>
 </html>
