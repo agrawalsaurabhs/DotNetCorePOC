@@ -15,6 +15,7 @@ using DotNetCorePOC.Persistence;
 using Microsoft.EntityFrameworkCore;
 using DotNetCorePOC.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using DotNetCorePOC.Middlewares;
 
 namespace DotNetCorePOC
 {
@@ -26,7 +27,6 @@ namespace DotNetCorePOC
             var builder = new ConfigurationBuilder()
                 .SetBasePath(hostingEnvironment.ContentRootPath)
                 .AddJsonFile("appsettings.json")
-                .AddJsonFile("appsettings1.json")
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -73,6 +73,8 @@ namespace DotNetCorePOC
                 Path = "/welcome"
             });
             app.UseFileServer();
+            //Custom middleware to server static files from node_modules folder
+            app.UseNodeModules(env.ContentRootPath);
             app.UseStaticFiles();
             app.Run(async (context) =>
             {
